@@ -18,7 +18,14 @@ function Scene({ fold, dieline }) {
 
       <Box3D fold={fold} dieline={dieline} />
 
-      <OrbitControls />
+      <OrbitControls
+    enableRotate={true}
+    enableZoom={true}
+    enablePan={true}
+    autoRotate={false}
+    minDistance={4}
+    maxDistance={12}
+/>
     </Canvas>
   );
 }
