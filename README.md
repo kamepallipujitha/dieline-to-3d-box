@@ -1,16 +1,50 @@
-# React + Vite
+# 2D Dieline to 3D Folding Box
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Three.js application that converts a 2D dieline into an interactive 3D folding carton.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Upload PNG/JPG/PDF dieline
+- Preview uploaded file
+- Interactive 3D folding animation
+- Fold progress slider
+- Orbit controls (rotate, zoom, pan)
+- React Three Fiber + Three.js rendering
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Three.js
+- React Three Fiber
+- React Three Drei
+- PDF.js
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/
+├── utils/
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## How to Run
+
+```bash
+npm install
+npm run dev
+```
+
+## Assumptions
+
+This implementation is optimized for the provided straight tuck-end sample dieline, following the assumptions allowed in the challenge brief.
+
+## Future Improvements
+
+- Generic dieline parser
+- Automatic panel detection
+- Cut and crease line recognition
+- Texture mapping on individual box faces
